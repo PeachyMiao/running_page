@@ -191,7 +191,7 @@ def parse_raw_data_to_nametuple(
 
 
 def get_all_keep_tracks(
-    email, password, old_tracks_ids, keep_sports_data_api, with_download_gpx=False
+    email, password, old_tracks_ids, keep_sports_data_api, with_download_gpx=True
 ):
     if with_download_gpx and not os.path.exists(GPX_FOLDER):
         os.mkdir(GPX_FOLDER)
